@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+security:
+  jwt:
+    enabled: true
+    secret: ${JWT_SECRET:devsecretdevsecretdevsecretdevse} # >=32 bytes
+
+spring:
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      default-filters:
+        - RemoveRequestHeader=Cookie
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: [GET,POST,PUT,DELETE,OPTIONS]
+            allowedHeaders: "*"
