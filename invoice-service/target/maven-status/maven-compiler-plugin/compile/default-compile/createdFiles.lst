@@ -1,0 +1,7 @@
+ru\skidivay\invoice\config\SecurityConfig.class
+ru\skidivay\invoice\InvoiceApplication.class
+ru\skidivay\invoice\repo\InvoiceRepository.class
+ru\skidivay\invoice\model\Invoice.class
+ru\skidivay\invoice\repo\InvoiceReceiverRepository.class
+ru\skidivay\invoice\model\InvoiceReceiver.class
+ru\skidivay\invoice\web\InvoiceController.class

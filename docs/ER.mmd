@@ -1,0 +1,84 @@
+```mermaid
+erDiagram
+  USERS {
+    string tgId PK
+    string tgUsername
+    string tgFirstName
+    string tgLastName
+    string plan
+    string tgPfp
+    string tgPfpId
+    date   registeredAt
+  }
+
+  SAVED_DETAILS {
+    string id PK
+    string tgId FK
+    enum   type
+    object details
+    date   createdAt
+    date   updatedAt
+  }
+
+  INVOICES {
+    string invoiceId PK
+    string ownerId FK
+    enum   type
+    enum   status
+    decimal sum
+    int    receiversQuantity
+    string description
+    date   deadline
+    object banks
+    object sbp
+    object wallets
+    object crypto
+    string link
+    date   createdAt
+    date   paidAt
+    string paidBy FK
+  }
+
+  INVOICE_RECEIVERS {
+    string id PK
+    string invoiceId FK
+    string receiverId FK
+    bool   accepted
+    date   joinedAt
+  }
+
+  PYRO_SESSIONS {
+    string id PK
+    string name
+    enum   status
+    date   lastUsed
+    long   requestCount
+    string lastError
+    bool   isAlive
+  }
+
+  HUNTED_BASE {
+    string tgId PK
+    string tgUsername
+    string tgFirstName
+    string tgLastName
+    string tgPfp
+    string tgPfpId
+    date   addedAt
+  }
+
+  USER_ACTIVITY {
+    string id PK
+    string tgId FK
+    string activityType
+    date   activityTime
+    object metadata
+  }
+
+  USERS ||--o{ SAVED_DETAILS : has
+  USERS ||--o{ INVOICES : owns
+  INVOICES ||--o{ INVOICE_RECEIVERS : has
+  USERS ||--o{ INVOICE_RECEIVERS : receives
+  HUNTED_BASE ||--o| INVOICES : paidBy
+  USERS ||--o{ USER_ACTIVITY : produces
+```

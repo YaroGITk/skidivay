@@ -1,0 +1,78 @@
+Project payapp {
+  database_type: "MongoDB"
+}
+
+Table users {
+  tgId string [pk]
+  tgUsername string [note: "unique, sparse"]
+  tgFirstName string
+  tgLastName string
+  plan enum  [note: "free|prem"]
+  tgPfp string
+  tgPfpId string
+  registeredAt datetime
+}
+
+Table saved_details {
+  id string [pk]
+  tgId string [ref: > users.tgId]
+  type enum [note: "bank|sbp|wallet|crypto"]
+  details json
+  createdAt datetime
+  updatedAt datetime
+}
+
+Table invoices {
+  invoiceId string [pk]
+  ownerId string [ref: > users.tgId]
+  type enum [note: "solo|multi"]
+  status enum [note: "verified|pending|waiting"]
+  sum decimal
+  receiversQuantity int
+  description string
+  deadline date
+  banks json
+  sbp json
+  wallets json
+  crypto json
+  link string
+  createdAt datetime
+  paidAt datetime
+  paidBy string [ref: > hunted_base.tgId]
+}
+
+Table invoice_receivers {
+  id string [pk]
+  invoiceId string [ref: > invoices.invoiceId]
+  receiverId string [ref: > users.tgId]
+  accepted bool
+  joinedAt datetime
+}
+
+Table pyro_sessions {
+  id string [pk]
+  name string [note: "unique"]
+  status enum [note:"idle|busy|error"]
+  lastUsed datetime
+  requestCount int
+  lastError string
+  isAlive bool
+}
+
+Table hunted_base {
+  tgId string [pk]
+  tgUsername string [note: "unique, sparse"]
+  tgFirstName string
+  tgLastName string
+  tgPfp string
+  tgPfpId string
+  addedAt datetime
+}
+
+Table user_activity {
+  id string [pk]
+  tgId string [ref: > users.tgId]
+  activityType string
+  activityTime datetime
+  metadata json
+}

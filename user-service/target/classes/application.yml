@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://mongo:27017/payapp}
+
+jwt:
+  secret: ${JWT_SECRET:dev-very-long-secret-min-32-bytes-please-change}
+  ttlSeconds: 604800

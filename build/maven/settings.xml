@@ -1,0 +1,23 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <mirrors>
+    <mirror>
+      <id>central</id>
+      <name>Maven Central</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+  <profiles>
+    <profile>
+      <id>docker-defaults</id>
+      <properties>
+        <https.protocols>TLSv1.2,TLSv1.3</https.protocols>
+      </properties>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>docker-defaults</activeProfile>
+  </activeProfiles>
+</settings>

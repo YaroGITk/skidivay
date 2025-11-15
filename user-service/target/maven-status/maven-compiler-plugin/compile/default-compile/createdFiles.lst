@@ -1,0 +1,5 @@
+ru\skidivay\user\model\User.class
+ru\skidivay\user\repo\UserRepository.class
+ru\skidivay\user\UserApplication.class
+ru\skidivay\user\web\UserController.class
+ru\skidivay\user\config\SecurityConfig.class

@@ -1,0 +1,5 @@
+ru\skidivay\hunted\HuntedApplication.class
+ru\skidivay\hunted\model\Hunted.class
+ru\skidivay\hunted\web\HuntedController.class
+ru\skidivay\hunted\repo\HuntedRepository.class
+ru\skidivay\hunted\config\SecurityConfig.class

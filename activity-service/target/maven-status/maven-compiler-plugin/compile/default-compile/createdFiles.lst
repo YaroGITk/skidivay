@@ -1,0 +1,5 @@
+ru\skidivay\activity\repo\UserActivityRepository.class
+ru\skidivay\activity\config\SecurityConfig.class
+ru\skidivay\activity\web\ActivityController.class
+ru\skidivay\activity\ActivityApplication.class
+ru\skidivay\activity\model\UserActivity.class

@@ -1,0 +1,5 @@
+ru\skidivay\details\repo\SavedDetailsRepository.class
+ru\skidivay\details\config\SecurityConfig.class
+ru\skidivay\details\DetailsApplication.class
+ru\skidivay\details\model\SavedDetails.class
+ru\skidivay\details\web\DetailsController.class

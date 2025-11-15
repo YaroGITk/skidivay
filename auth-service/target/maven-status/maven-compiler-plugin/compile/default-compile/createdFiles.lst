@@ -1,0 +1,7 @@
+ru\skidivay\auth\AuthApplication.class
+ru\skidivay\auth\config\SecurityConfig.class
+ru\skidivay\auth\repo\UserRepository.class
+ru\skidivay\auth\web\AuthController.class
+ru\skidivay\auth\web\AuthController$TelegramLoginRequest.class
+ru\skidivay\auth\model\User.class
+ru\skidivay\auth\web\AuthController$TokenResponse.class

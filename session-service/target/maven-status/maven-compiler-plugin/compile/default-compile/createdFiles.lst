@@ -1,0 +1,5 @@
+ru\skidivay\session\model\PyroSession.class
+ru\skidivay\session\config\SecurityConfig.class
+ru\skidivay\session\repo\PyroSessionRepository.class
+ru\skidivay\session\web\SessionController.class
+ru\skidivay\session\SessionApplication.class
