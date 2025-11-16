@@ -6,15 +6,16 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import ru.skidivay.common.security.JwtService;
-import ru.skidivay.common.security.JwtAuthFilter;
+import ru.skidivay.auth.security.JwtAuthFilter;
+import ru.skidivay.auth.security.JwtService;
 
 @Configuration
 public class SecurityConfig {
   @Bean
-  JwtService jwtService(@Value("${jwt.secret}") String secret,
-                        @Value("${jwt.ttlSeconds}") long ttl) {
-    return new JwtService(secret, ttl);
+   JwtService jwtService(@Value("${jwt.secret}") String secret,
+                        @Value("${jwt.accessTtlSeconds}") long accessTtlSeconds,
+                        @Value("${jwt.refreshTtlSeconds}") long refreshTtlSeconds) {
+    return new JwtService(secret, accessTtlSeconds, refreshTtlSeconds);
   }
 
   @Bean

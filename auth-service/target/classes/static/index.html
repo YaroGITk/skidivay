@@ -72,19 +72,9 @@
             btn.textContent = b ? 'Отправляю…' : 'Войти через Telegram';
         };
 
-        // ==== Theme from Telegram ====
-        function applyTheme(tp = {}) {
-            const r = document.documentElement.style;
-            r.setProperty('--bg', tp.bg_color || '#ffffff');
-            r.setProperty('--text', tp.text_color || '#222');
-            r.setProperty('--hint', tp.hint_color || '#6b7280');
-            r.setProperty('--btn', tp.button_color || '#2aabee');
-            r.setProperty('--btn-text', tp.button_text_color || '#ffffff');
-            r.setProperty('--card', tp.secondary_bg_color || '#f5f5f7');
-        }
 
         // ==== Init env ====
-        const defaultApi = `${location.origin}/api/auth/telegram/webapp`;
+        const defaultApi = `${location.origin}/auth/telegram`;
         const apiFromQuery = new URLSearchParams(location.search).get('api');
         apiInput.value = apiFromQuery || defaultApi;
 

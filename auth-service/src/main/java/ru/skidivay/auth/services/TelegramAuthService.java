@@ -18,15 +18,18 @@ public class TelegramAuthService {
 
     private final JwtService jwtService;
     private final UserService userService;
+    private final RefreshTokenService refreshTokenService;
     private final String botToken;
 
     public TelegramAuthService(
             JwtService jwtService,
             UserService userService,
+            RefreshTokenService refreshTokenService,
             @Value("${telegram.botToken}") String botToken
     ) {
         this.jwtService = jwtService;
         this.userService = userService;
+        this.refreshTokenService = refreshTokenService;
         this.botToken = botToken;
     }
 
@@ -38,17 +41,47 @@ public class TelegramAuthService {
         );
 
         WebAppUser tgUser = parsed.getUser();
-
         User user = userService.findOrCreateByTelegramUser(tgUser);
 
-        String token = jwtService.issue(
-                user.getTgId(),
+        String userId = user.getTgId();
+
+        String accessToken = jwtService.issueAccess(
+                userId,
                 Map.of(
                         "username", user.getTgUsername() == null ? "" : user.getTgUsername(),
                         "plan", user.getPlan()
                 )
         );
 
-        return new TokenResponse(token);
+        String refreshToken = refreshTokenService.create(userId);
+
+        return new TokenResponse(accessToken, refreshToken);
+    }
+
+    public TokenResponse refresh(String refreshToken) {
+        var rt = refreshTokenService.validate(refreshToken);
+        String userId = rt.getUserId();
+
+        User user = userService.getById(userId); // нужно добавить метод в UserService
+
+        String newAccess = jwtService.issueAccess(
+                userId,
+                Map.of(
+                        "username", user.getTgUsername() == null ? "" : user.getTgUsername(),
+                        "plan", user.getPlan()
+                )
+        );
+
+        // по желанию: ротировать refresh-токен
+        String newRefresh = refreshTokenService.create(userId);
+        refreshTokenService.revoke(refreshToken);
+
+        return new TokenResponse(newAccess, newRefresh);
+    }
+
+    public void logout(String refreshToken) {
+        // можно revoke или delete
+        refreshTokenService.revoke(refreshToken);
+        // refreshTokenService.delete(refreshToken);
     }
 }

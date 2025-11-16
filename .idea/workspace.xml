@@ -4,7 +4,78 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bba79f5-cf80-4906-8543-0f84103690c3" name="Changes" comment="" />
+    <list default="true" id="2bba79f5-cf80-4906-8543-0f84103690c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/auth-common/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-common/src/main/java/ru/skidivay/auth/security/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/models/RefreshToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/services/RefreshTokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/activity-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/activity-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/src/main/java/ru/skidivay/activity/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/activity-service/src/main/java/ru/skidivay/activity/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/activity-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/target/activity-service-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/target/activity-service-1.0.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/activity-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/target/classes/ru/skidivay/activity/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/activity-service/target/classes/ru/skidivay/activity/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activity-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/DTOs/request/TelegramLoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/DTOs/request/TelegramLoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/DTOs/response/TokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/DTOs/response/TokenResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/security/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-common/src/main/java/ru/skidivay/auth/security/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/security/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/security/telegram/WebAppChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-common/src/main/java/ru/skidivay/auth/security/telegram/WebAppChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/security/telegram/WebAppInitData.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-common/src/main/java/ru/skidivay/auth/security/telegram/WebAppInitData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/security/telegram/WebAppInitDataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-common/src/main/java/ru/skidivay/auth/security/telegram/WebAppInitDataParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/security/telegram/WebAppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-common/src/main/java/ru/skidivay/auth/security/telegram/WebAppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/services/TelegramAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/services/TelegramAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/ru/skidivay/auth/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/auth-service-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/auth-service-1.0.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/ru/skidivay/auth/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/ru/skidivay/auth/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/ru/skidivay/auth/repo/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/ru/skidivay/auth/web/AuthController$TelegramLoginRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/ru/skidivay/auth/web/AuthController$TokenResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/ru/skidivay/auth/web/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/details-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/details-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details-service/src/main/java/ru/skidivay/details/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/details-service/src/main/java/ru/skidivay/details/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/details-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hunted-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/hunted-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hunted-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hunted-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hunted-service/src/main/java/ru/skidivay/hunted/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hunted-service/src/main/java/ru/skidivay/hunted/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hunted-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hunted-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_data/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_data/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_data/collection-9ff57cd3-5462-43da-8c8e-9e4aa1bd5fe1.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/collection-9ff57cd3-5462-43da-8c8e-9e4aa1bd5fe1.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_data/diagnostic.data/metrics.2025-11-15T12-30-03Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/diagnostic.data/metrics.2025-11-15T12-30-03Z-00000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_data/diagnostic.data/metrics.interim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_data/index-ed7a54ce-6694-4bae-a311-6fb78f31c317.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/index-ed7a54ce-6694-4bae-a311-6fb78f31c317.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_data/journal/WiredTigerLog.0000000002" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/journal/WiredTigerLog.0000000002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/session-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/session-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session-service/src/main/java/ru/skidivay/session/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/session-service/src/main/java/ru/skidivay/session/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/session-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/ru/skidivay/user/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/ru/skidivay/user/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +138,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yaros\Downloads\payapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yaros\Downloads\payapp\auth-common\src\main\java\ru\skidivay\auth\security" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -190,7 +264,8 @@
       <workItem from="1763103851298" duration="533000" />
       <workItem from="1763142406234" duration="3787000" />
       <workItem from="1763146732789" duration="886000" />
-      <workItem from="1763208532169" duration="14388000" />
+      <workItem from="1763208532169" duration="15965000" />
+      <workItem from="1763273252998" duration="9025000" />
     </task>
     <servers />
   </component>

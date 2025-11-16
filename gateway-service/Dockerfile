@@ -7,6 +7,7 @@ WORKDIR /src
 COPY build/maven/settings.xml /root/.m2/settings.xml
 # Copy only POMs to warm dependency cache
 COPY pom.xml ./
+COPY auth-common/pom.xml ./auth-common/pom.xml
 COPY gateway-service/pom.xml ./gateway-service/pom.xml
 COPY auth-service/pom.xml ./auth-service/pom.xml
 COPY user-service/pom.xml ./user-service/pom.xml

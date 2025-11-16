@@ -1,5 +1,13 @@
 C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\AuthApplication.java
-C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\config\SecurityConfig.java
-C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\model\User.java
-C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\repo\UserRepository.java
-C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\web\AuthController.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\configuration\SecurityConfig.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\controllers\AuthController.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\DTOs\request\RefreshTokenRequest.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\DTOs\request\TelegramLoginRequest.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\DTOs\response\TokenResponse.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\models\RefreshToken.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\models\User.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\repositories\RefreshTokenRepository.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\repositories\UserRepository.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\services\RefreshTokenService.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\services\TelegramAuthService.java
+C:\Users\yaros\Downloads\payapp\auth-service\src\main\java\ru\skidivay\auth\services\UserService.java

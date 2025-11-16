@@ -38,5 +38,9 @@ public class UserService {
         return userRepository.save(user);
     }
 
+    public User getById(String id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("User not found"));
+    }
 
 }

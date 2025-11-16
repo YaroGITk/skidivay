@@ -8,4 +8,5 @@ spring:
 
 jwt:
   secret: ${JWT_SECRET:dev-very-long-secret-min-32-bytes-please-change}
-  ttlSeconds: 604800
+  accessTtlSeconds: 900
+  refreshTtlSeconds: 2592000

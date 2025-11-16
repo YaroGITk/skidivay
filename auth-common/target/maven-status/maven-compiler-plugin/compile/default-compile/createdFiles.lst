@@ -1,0 +1,6 @@
+ru\skidivay\auth\security\JwtService.class
+ru\skidivay\auth\security\telegram\WebAppUser.class
+ru\skidivay\auth\security\JwtAuthFilter.class
+ru\skidivay\auth\security\telegram\WebAppChat.class
+ru\skidivay\auth\security\telegram\WebAppInitDataParser.class
+ru\skidivay\auth\security\telegram\WebAppInitData.class

@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 public class TelegramLoginRequest {
 
     @NotBlank
-    String initData;
+    private String initData;
 
     public TelegramLoginRequest(@NotBlank String initData) {
         this.initData = initData;
